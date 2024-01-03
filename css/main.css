@@ -1,0 +1,205 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{ 
+    background-image: url(../img/mainpage);
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/* Add additional styles for your content if needed */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    width: 100%;
+    height: 80px;
+    background-color:#1c1c84;
+    padding: 5px 5%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    height: 80px;
+    width: 150px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul{
+    border:  solid;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20%;
+    background-color: white;
+    color: green;
+}
+a{
+    color: blue;
+}
+
+nav ul li a:hover{
+    padding: 2px;
+    color: red;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h2 {
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+        /* Center align the heading */
+        h1 {
+            width: 100%;
+            text-align: center;
+        }
+        /* Set the display and alignment for the main and result sections */
+        .pdfwork, .afterupload {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+        }
+        /* Add margin-top to all elements inside .pdfwork */
+        .pdfwork * {
+            margin-top: 5px;
+        }
+        /* Hide the result section initially */
+        .afterupload {
+            display: none;
+        }
+        /* Hide the "Extract Another PDF" button initially */
+        .another {
+            display: none;
+        }
+
+              /* Center align the heading */
+              h1 {
+                width: 100%;
+                text-align: center;
+            }
+            /* Set the display and alignment for the main and result sections */
+            .pdfwork, .afterupload, .customCode {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                width: 100%;
+            }
+            /* Add margin-top to all elements inside .pdfwork */
+            .pdfwork * {
+                margin-top: 5px;
+            }
+            /* Hide the result section initially */
+            .afterupload, .customCode {
+                display: none;
+            }
+            /* Hide the "Extract Another PDF" button initially */
+            .another {
+                display: none;
+            }
+ .pdfwork{
+    border: solid 2px  blueviolet;
+    width: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: transparent;
+        border: 2px solid rgba(255, 255, 255, .2);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+        color: white;
+        border-radius: 10px;
+        padding: 30px 40px;
+
+}
+     .pdfwork h1{
+        margin-top: 0%;
+        padding: 0%;
+        color: red;
+        font-size:40px;
+     }
+     .pdfwork h1 span{
+        color: #45a049;
+     }
+
+
+@media (min-aspect-ratio: 16/9) {
+    video {
+      width: 100%;
+      height: auto;
+    }
+  }
+  @media (max-aspect-ratio: 16/9) {
+    video {
+      width: auto;
+      height: 100%;
+    }
+  }
+
